@@ -1,0 +1,10 @@
+﻿@using ModelDemo.Models
+@model ModelDemo.Models.IndexPageModel
+
+@{
+    this.ViewBag.Title = "Home page";
+}
+
+<h1>Model Demo</h1>
+<p><strong>Имя и фамилия:</strong> @this.Model.FullName</p>
+<p><strong>Текущее дата и время:</strong> @this.Model.CurrentTime.ToString()</p>
